@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -60,15 +59,15 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center gap-3">
               <div className="">
-                <Link href={"/"}>
-                  <div className="flex items-center gap-3">
-                    <Image
+                <Link href={"/"} className="flex items-center gap-3" aria-label="Homepage">
+                  <Image
                     src="/assets/images/logo.webp"
-                    alt="Logo"
+                    alt="Eddie logo"
                     width={52}
                     height={52}
-                    className="object-contain"/>
-                  </div>
+                    sizes="52px"
+                    className="object-contain"
+                  />
                 </Link>
               </div>
               <h3 className="text-2xl font-black text-slate-900">Eddie</h3>
@@ -86,6 +85,7 @@ export default function Footer() {
                     target={s.href.startsWith("http") ? "_blank" : undefined}
                     rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     aria-label={s.name}
+                    title={s.name}
                     className="w-10 h-10 rounded-lg grid place-items-center border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                   >
                     <Icon name={s.icon} />
@@ -115,7 +115,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-slate-200 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>© {currentYear} Eddie. All rights reserved.</div>
           <div className="flex items-center gap-2">
-            <a href="#home" className="hover:text-slate-900">Back to top</a>
+            <a href="#home" aria-label="Back to top" className="hover:text-slate-900">Back to top</a>
           </div>
         </div>
       </div>

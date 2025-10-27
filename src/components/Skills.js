@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export default function Skills() {
   const skills = [
@@ -15,16 +15,6 @@ export default function Skills() {
     { name: "Figma", icon: "/assets/images/figma.webp" },
     { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
   ];
-
-  const badge = {
-    Frontend: "from-orange-300 to-red-400",
-    Framework: "from-blue-300 to-indigo-400",
-    Design: "from-purple-300 to-pink-400",
-    Platform: "from-emerald-300 to-teal-400",
-    Tools: "from-yellow-300 to-orange-400",
-  };
-
-  const defaultBadge = "from-slate-200 to-slate-300";
 
   return (
     <section id="skills" className="relative px-4 overflow-hidden bg-slate-50 pt-20 pb-20">
@@ -51,8 +41,13 @@ export default function Skills() {
                 </div>
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={skill.icon} alt={`${skill.name} icon`} className="w-16 h-16 object-contain" />
+                    <Image
+                      src={skill.icon}
+                      alt={`${skill.name} icon`}
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 object-contain"
+                    />
                   </div>
                   <h3 className="font-semibold text-slate-900">{skill.name}</h3>
                 </div>

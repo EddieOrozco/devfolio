@@ -83,8 +83,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
+        {/* Skip link for keyboard users */}
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only focus:z-50 focus:px-4 focus:py-2"
+        >
+          Skip to content
+        </a>
         <Navigation />
-        {children}
+        <main id="content" className="min-h-screen">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

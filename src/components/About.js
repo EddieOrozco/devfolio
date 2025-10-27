@@ -1,4 +1,3 @@
-"use client";
 import Image from 'next/image';
 
 export default function About() {
@@ -16,7 +15,7 @@ export default function About() {
           backgroundPosition: "0 0, 30px 30px",
         }} />
       </div>
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-24 left-10 w-80 h-80 rounded-full bg-sky-50 blur-3xl" />
         <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-teal-50 blur-3xl" />
       </div>
