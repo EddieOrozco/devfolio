@@ -5,31 +5,32 @@ export default function Skills() {
     { name: "HTML5", icon: "/assets/images/html-5.webp" },
     { name: "CSS3", icon: "/assets/images/css3.webp" },
     { name: "JavaScript", icon: "/assets/images/javascript.webp" },
+    { name: "WordPress", icon: "/assets/images/wp.webp" },
+    { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
+    { name: "Crownpeak", icon: "/assets/images/crownpeak_logo.webp"},
     { name: "Next.js", icon: "/assets/images/nextjs.webp" },
     { name: "Responsive", icon: "/assets/images/responsive.webp" },
-    { name: "UI/UX", icon: "/assets/images/ui-ux.webp" },
-    { name: "Shopify", icon: "/assets/images/shopify.webp"},
     { name: "Bootstrap", icon: "/assets/images/bootstrap.webp"},
     { name: "Tailwind", icon: "/assets/images/tailwindcss.webp" },
     { name: "Git", icon: "/assets/images/Git.webp" },
     { name: "Figma", icon: "/assets/images/figma.webp" },
-    { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
+    // { name: "Shopify", icon: "/assets/images/shopify.webp"},
   ];
 
   return (
-    <section id="skills" className="relative px-4 overflow-hidden bg-slate-50 pt-20 pb-20">
+    <section id="skills" className="scroll-mt-24 bg-[#f6f9fc] py-24">
     
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-3">
-            <span className="h-px w-14 bg-gradient-to-r from-transparent to-cyan-400" />
-            <span className="text-cyan-700 font-mono text-xs tracking-[0.3em] uppercase">Tech Arsenal</span>
-            <span className="h-px w-14 bg-gradient-to-l from-transparent to-cyan-400" />
+            <span className="h-px w-14 bg-gradient-to-r from-transparent to-teal-400" />
+            <span className="text-teal-600 text-xs tracking-[0.3em] uppercase">Tech Arsenal</span>
+            <span className="h-px w-14 bg-gradient-to-l from-transparent to-teal-400" />
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900">Skills & Technologies</h2>
-          <p className="mt-3 text-slate-700 max-w-2xl mx-auto">
+          {/* <p className="mt-3 text-slate-700 max-w-2xl mx-auto">
             A toolkit I use to deliver clean, accessible, and performant UIs.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">

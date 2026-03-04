@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navigation from "../components/Layout/Navigation/Navigation";
+// import Navigation from "../components/Layout/Navigation/Navigation";
+import Header from "../components/Header";
 import Footer from "../components/Layout/Footer/Footer";
 
 const geistSans = Geist({
@@ -90,7 +91,8 @@ export default function RootLayout({ children }) {
         >
           Skip to content
         </a>
-        <Navigation />
+        <Header/>
+        {/* <Navigation /> */}
         <main id="content" className="min-h-screen">
           {children}
         </main>

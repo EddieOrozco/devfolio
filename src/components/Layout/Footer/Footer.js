@@ -1,40 +1,57 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const social = [
-    { name: "GitHub", href: "https://github.com", icon: "github" },
-    { name: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-    { name: "Twitter", href: "https://twitter.com", icon: "twitter" },
-    { name: "Email", href: "mailto:orozcoe230@gmail.com", icon: "email" },
+    { name: "GitHub", href: "https://github.com/EddieOrozco", icon: "github" },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/eduardoorozco23/",
+      icon: "linkedin",
+    },
+    { name: "Email", href: "mailto:eddieorozco231@gmail.com", icon: "email" },
   ];
 
   const Icon = ({ name }) => {
     switch (name) {
       case "github":
         return (
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            className="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
             <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234C5.662 21.302 4.967 19.16 4.967 19.16c-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.947 21.798 24 17.301 24 12 24 5.373 18.627 0 12 0z" />
           </svg>
         );
       case "linkedin":
         return (
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            className="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
-          </svg>
-        );
-      case "twitter":
-        return (
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
           </svg>
         );
       case "email":
         return (
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
           </svg>
         );
       default:
@@ -46,47 +63,60 @@ export default function Footer() {
     { name: "Home", href: "#home" },
     { name: "Skills", href: "#skills" },
     { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
+    { name: "Projects", href: "#projects" },
   ];
 
-  const tech = ["React", "Next.js", "JavaScript", "CSS3", "HTML5", "SASS", "Tailwind"];
-
   return (
-    <footer id="contact" className="relative bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-8">
-          <div className="lg:col-span-2 space-y-5">
+    <footer
+      id="contact"
+      className="scroll-mt-24 border-t border-slate-200/60 bg-transparent"
+    >
+      <div className="max-w-7xl mx-auto px-6 py-10 md:py-12">
+        {/* Top row */}
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+          {/* Brand / summary */}
+          <div className="space-y-4 max-w-md">
             <div className="flex items-center gap-3">
-              <div className="">
-                <Link href={"/"} className="flex items-center gap-3" aria-label="Homepage">
-                  <Image
-                    src="/assets/images/logo.webp"
-                    alt="Eddie logo"
-                    width={52}
-                    height={52}
-                    sizes="52px"
-                    className="object-contain"
-                  />
-                </Link>
+              <Link
+                href="/"
+                aria-label="Homepage"
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-teal-500 text-xs font-semibold text-white"
+              >
+                EO
+              </Link>
+              <div>
+                <p className="text-sm font-semibold text-slate-900">
+                  Eddie Orozco
+                </p>
+                <p className="text-xs text-slate-500">
+                  Front-End Developer &amp; CMS Specialist
+                </p>
               </div>
-              <h3 className="text-2xl font-black text-slate-900">Eddie</h3>
             </div>
-            <p className="text-slate-700 max-w-md">
-              Full-stack developer passionate about creating innovative web solutions and delivering delightful user experiences.
+
+            <p className="text-sm text-slate-600">
+              Portfolio of Eduardo Orozco. Building elegant products with
+              precision and care.
             </p>
+
             <div>
-              <h4 className="text-slate-900 font-semibold mb-2">Connect</h4>
-              <div className="flex gap-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-2">
+                Connect
+              </p>
+              <div className="flex gap-2">
                 {social.map((s) => (
                   <a
                     key={s.name}
                     href={s.href}
                     target={s.href.startsWith("http") ? "_blank" : undefined}
-                    rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    rel={
+                      s.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     aria-label={s.name}
                     title={s.name}
-                    className="w-10 h-10 rounded-lg grid place-items-center border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                    className="w-9 h-9 rounded-full border border-slate-200 bg-white text-slate-500 hover:border-teal-500 hover:text-teal-600 shadow-sm flex items-center justify-center transition"
                   >
                     <Icon name={s.icon} />
                   </a>
@@ -95,28 +125,54 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="text-slate-900 font-semibold mb-3">Navigation</h4>
-            <div className="space-y-2">
-              {quick.map((q) => (
-                <a key={q.name} href={q.href} className="flex items-center gap-3 p-2 rounded-lg text-slate-700 hover:bg-slate-100">
-                  <span>{q.name}</span>
-                </a>
-              ))}
+          {/* Nav + CTA */}
+          <div className="flex flex-col gap-8 md:flex-row md:gap-12">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+                Navigation
+              </p>
+              <nav className="space-y-1 text-sm">
+                {quick.map((q) => (
+                  <a
+                    key={q.name}
+                    href={q.href}
+                    className="block py-1 text-slate-600 hover:text-teal-600 transition"
+                  >
+                    {q.name}
+                  </a>
+                ))}
+              </nav>
             </div>
-          </div>
 
-          <div>
-            <h4 className="text-slate-900 font-semibold mb-3">Availability</h4>
-            <p className="text-slate-700 text-sm">Open to full-time roles, both remote and on-site. Let’s build something great together.</p>
+            <div className="space-y-3 max-w-xs">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Availability
+              </p>
+              <p className="text-sm text-slate-600">
+                Open to front-end and CMS roles. If my work fits what
+                you&apos;re building, I&apos;d love to chat.
+              </p>
+              <a
+                href="mailto:eddieorozco231@gmail.com"
+                className="inline-flex items-center justify-center rounded-full bg-teal-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white hover:bg-teal-600 transition shadow-sm"
+              >
+                Let&apos;s Work Together
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="pt-6 border-t border-slate-200 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div>© {currentYear} Eddie. All rights reserved.</div>
-          <div className="flex items-center gap-2">
-            <a href="#home" aria-label="Back to top" className="hover:text-slate-900">Back to top</a>
-          </div>
+        {/* Bottom row */}
+        <div className="mt-8 pt-4 border-t border-slate-200/60 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div>© {currentYear} Eddie Orozco. All rights reserved.</div>
+          <a
+            href="#home"
+            aria-label="Back to top"
+            className="inline-flex items-center gap-1 hover:text-teal-600 transition"
+          >
+            <span>Back to top</span>
+            <span className="text-sm">↑</span>
+          </a>
         </div>
       </div>
     </footer>
