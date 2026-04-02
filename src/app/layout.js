@@ -3,6 +3,7 @@ import "./globals.css";
 // import Navigation from "../components/Layout/Navigation/Navigation";
 import Header from "../components/Header";
 import Footer from "../components/Layout/Footer/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -97,6 +98,24 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        {/* Google tag (gtag.js)  */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-52XWVYJFKD"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-52XWVYJFKD');
+          `}
+        </Script>
+        <Script
+            src="https://t.contentsquare.net/uxa/9a3c8928b863f.js"
+            strategy="afterInteractive"
+        />
       </body>
     </html>
   );
