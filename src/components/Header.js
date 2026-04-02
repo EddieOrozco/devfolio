@@ -40,12 +40,12 @@ export default function Header() {
               EO
             </div>
             <div className="leading-tight">
-              <span className="block text-sm font-semibold text-slate-900">
+              <span className="block text-lg font-semibold text-slate-900">
                 Eddie Orozco
               </span>
-              <span className="block text-xs text-slate-500">
+              {/* <span className="block text-xs text-slate-500">
                 Front-End Developer
-              </span>
+              </span> */}
             </div>
           </Link>
 
@@ -64,7 +64,7 @@ export default function Header() {
 
             {/* CTA Button */}
             <Link
-              href="/#contact"
+              href="mailto:eddieorozco231@gmail.com"
               className="ml-4 rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-slate-800"
             >
               Let’s Work Together
