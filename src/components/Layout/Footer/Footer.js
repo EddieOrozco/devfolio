@@ -60,10 +60,10 @@ export default function Footer() {
   };
 
   const quick = [
-    { name: "Home", href: "#home" },
-    { name: "Skills", href: "#skills" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
+    { name: "Home", href: "/" },
+    { name: "Skills", href: "/#skills" },
+    { name: "About", href: "/#about" },
+    { name: "Projects", href: "/#projects" },
   ];
 
   return (
@@ -71,11 +71,11 @@ export default function Footer() {
       id="contact"
       className="scroll-mt-24 border-t border-slate-200/60 bg-transparent"
     >
-      <div className="max-w-7xl mx-auto px-6 py-10 md:py-12">
+      <div className="mx-auto max-w-7xl px-6 py-10 md:py-12">
         {/* Top row */}
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           {/* Brand / summary */}
-          <div className="space-y-4 max-w-md">
+          <div className="max-w-md space-y-4">
             <div className="flex items-center gap-3">
               <Link
                 href="/"
@@ -100,7 +100,7 @@ export default function Footer() {
             </p>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-2">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Connect
               </p>
               <div className="flex gap-2">
@@ -116,7 +116,7 @@ export default function Footer() {
                     }
                     aria-label={s.name}
                     title={s.name}
-                    className="w-9 h-9 rounded-full border border-slate-200 bg-white text-slate-500 hover:border-teal-500 hover:text-teal-600 shadow-sm flex items-center justify-center transition"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition hover:border-teal-500 hover:text-teal-600"
                   >
                     <Icon name={s.icon} />
                   </a>
@@ -128,23 +128,23 @@ export default function Footer() {
           {/* Nav + CTA */}
           <div className="flex flex-col gap-8 md:flex-row md:gap-12">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-3">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Navigation
               </p>
               <nav className="space-y-1 text-sm">
                 {quick.map((q) => (
-                  <a
+                  <Link
                     key={q.name}
                     href={q.href}
-                    className="block py-1 text-slate-600 hover:text-teal-600 transition"
+                    className="block py-1 text-slate-600 transition hover:text-teal-600"
                   >
                     {q.name}
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div>
 
-            <div className="space-y-3 max-w-xs">
+            <div className="max-w-xs space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Availability
               </p>
@@ -154,7 +154,7 @@ export default function Footer() {
               </p>
               <a
                 href="mailto:eddieorozco231@gmail.com"
-                className="inline-flex items-center justify-center rounded-full bg-teal-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white hover:bg-teal-600 transition shadow-sm"
+                className="inline-flex items-center justify-center rounded-full bg-teal-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-teal-600"
               >
                 Let&apos;s Work Together
               </a>
@@ -163,16 +163,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="mt-8 pt-4 border-t border-slate-200/60 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-slate-200/60 pt-4 text-xs text-slate-500 sm:flex-row">
           <div>© {currentYear} Eddie Orozco. All rights reserved.</div>
-          <a
-            href="#home"
+          <Link
+            href="/#home"
             aria-label="Back to top"
-            className="inline-flex items-center gap-1 hover:text-teal-600 transition"
+            className="inline-flex items-center gap-1 transition hover:text-teal-600"
           >
             <span>Back to top</span>
             <span className="text-sm">↑</span>
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
