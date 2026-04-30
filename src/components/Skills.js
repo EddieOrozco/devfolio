@@ -5,16 +5,15 @@ export default function Skills() {
     { name: "HTML5", icon: "/assets/images/html-5.webp" },
     { name: "CSS3", icon: "/assets/images/css3.webp" },
     { name: "JavaScript", icon: "/assets/images/javascript.webp" },
+    { name: "Shopify", icon: "/assets/images/shopify.webp" },
     { name: "WordPress", icon: "/assets/images/wp.webp" },
     { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
-    { name: "Crownpeak", icon: "/assets/images/crownpeak_logo.webp"},
-    { name: "Next.js", icon: "/assets/images/nextjs.webp" },
-    { name: "Responsive", icon: "/assets/images/responsive.webp" },
-    { name: "Bootstrap", icon: "/assets/images/bootstrap.webp"},
-    { name: "Tailwind", icon: "/assets/images/tailwindcss.webp" },
-    { name: "Git", icon: "/assets/images/Git.webp" },
-    { name: "Figma", icon: "/assets/images/figma.webp" },
-    // { name: "Shopify", icon: "/assets/images/shopify.webp"},
+    { name: "Email Marketing", icon: "/assets/images/klaviyo.webp"},
+    { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
+    { name: "Litmus", icon: "/assets/images/litmus-logo.webp" },
+    // { name: "Figma", icon: "/assets/images/figma.webp" },
+    // { name: "Crownpeak", icon: "/assets/images/crownpeak_logo.webp"},
+    // { name: "Responsive", icon: "/assets/images/responsive.webp" },
   ];
 
   return (
@@ -33,7 +32,7 @@ export default function Skills() {
           </p> */}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {skills.map((skill, i) => (
             <div key={skill.name} className="group relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-slate-200 to-white blur opacity-0 group-hover:opacity-100 transition" />

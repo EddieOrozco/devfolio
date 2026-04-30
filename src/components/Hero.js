@@ -14,23 +14,23 @@ export default function Hero() {
         <div className="w-full space-y-6 md:w-1/2">
           
           {/* Small top line */}
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">
-            Front-End Developer & CMS Specialist
+          <p className="text-xs tracking-[0.25em] text-slate-400">
+            Front-End · CMS · Email Marketing · Marketing Automation
           </p>
 
           {/* Big title */}
           <div className="leading-[0.95]">
-            <h1 className="text-5xl font-extrabold uppercase tracking-tight text-slate-900 sm:text-6xl">
-              FRONT-END
+            <h1 className="text-5xl font-extrabold tracking text-slate-900 sm:text-6xl">
+             Hi, I'm Eddie
             </h1>
-            <h1 className="text-5xl font-extrabold uppercase tracking-tight text-teal-600 sm:text-6xl">
-              DEVELOPER
+            <h1 className="text-5xl font-extrabold tracking text-teal-600 sm:text-6xl">
+              MarTech-Focused Front-End Dev
             </h1>
           </div>
 
           {/* Supporting paragraph */}
           <p className="max-w-lg text-base text-slate-700 sm:text-lg">
-            I build clean, responsive interfaces with HTML, CSS, and JavaScript, and work within CMS platforms like Sitecore and Crownpeak to create structured landing pages, manage content updates, and optimize page flow for clarity and performance.
+            I build marketing-focused digital systems that connect CMS platforms, email automation, and front-end experiences to support real campaign execution.
           </p>
 
           {/* Buttons */}

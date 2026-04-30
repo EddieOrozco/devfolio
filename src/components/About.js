@@ -57,7 +57,7 @@ export default function About() {
             </p>
 
             <p>
-              Alongside my enterprise CMS work, I actively build and experiment with WordPress and Shopify projects to continue expanding my expertise across modern content platforms.
+              Alongside my CMS work, I actively build and experiment with WordPress and Shopify projects, while developing email marketing workflows in Klaviyo including signup forms, automated flows, and campaign execution to better connect the full customer journey.
             </p>
 
             <p>

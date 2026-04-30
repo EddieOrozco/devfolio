@@ -95,8 +95,7 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-slate-600">
-              Portfolio of Eduardo Orozco. Building elegant products with
-              precision and care.
+              Portfolio of Eduardo Orozco. Creating data-driven web experiences that connect design, development, and marketing.
             </p>
 
             <div>
@@ -149,8 +148,7 @@ export default function Footer() {
                 Availability
               </p>
               <p className="text-sm text-slate-600">
-                Open to front-end and CMS roles. If my work fits what
-                you&apos;re building, I&apos;d love to chat.
+                Open to front-end and MarTech roles focused on CMS, email, and marketing automation.
               </p>
               <a
                 href="mailto:eddieorozco231@gmail.com"
