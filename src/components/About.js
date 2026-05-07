@@ -57,11 +57,11 @@ export default function About() {
             </p>
 
             <p>
-              Alongside my CMS work, I actively build and experiment with WordPress and Shopify projects, while developing email marketing workflows in Klaviyo including signup forms, automated flows, and campaign execution to better connect the full customer journey.
+              Alongside my enterprise CMS work, I actively build and experiment with WordPress and Shopify projects while developing email marketing workflows in Klaviyo, including signup forms, automated flows, custom HTML emails, and campaign execution focused on improving the customer journey.
             </p>
 
             <p>
-              I work closely with designers, marketers, and content teams to launch campaign pages, improve performance, and create flexible systems that make ongoing updates simple.
+              I work closely with designers, marketers, and content teams to launch campaign pages, support marketing initiatives, and create flexible systems that make ongoing updates efficient and scalable.
             </p>
 
             <p className="font-medium text-slate-900">
