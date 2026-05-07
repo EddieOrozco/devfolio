@@ -34,9 +34,7 @@ export default function AdvocateCaseStudy() {
               Advocate Health Care – Component-Based CMS Pages
             </h1>
             <p className="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">
-              Enterprise-level landing pages built with reusable components in
-              Crownpeak and Sitecore, supporting multiple service lines and
-              campaigns for a large healthcare system.
+              Enterprise healthcare landing pages built using reusable CMS components within Sitecore and Crownpeak ecosystems.
             </p>
 
             {/* Meta row */}
@@ -47,7 +45,7 @@ export default function AdvocateCaseStudy() {
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Tech</p>
-                <p>Sitecore, Crownpeak </p>
+                <p>Sitecore, Crownpeak, HTML, CSS</p>
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Type</p>
@@ -82,18 +80,22 @@ export default function AdvocateCaseStudy() {
 
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-2">
-                CMS &amp; Component Strategy
+                Enterprise CMS Implementation
               </h2>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  Assisted in the enterprise-wide migration from <span className="font-semibold">Crownpeak</span> to <span className="font-semibold">Sitecore</span> CMS, restructuring and implementing component-based pages to align with updated platform standards.
+                  Assisted in the enterprise-wide migration from Crownpeak to Sitecore CMS, supporting the transition of structured content and reusable page components across multiple healthcare brands.
                 </li>
                 <li>
-                  Translated approved content documentation and mockups into structured, component-based CMS pages.
+                  Built and maintained component-based CMS pages using approved enterprise design systems, content documentation, and reusable content modules.
                 </li>
                 <li>
-                  Ensured layout accuracy and brand consistency by implementing updates in accordance with enterprise design and accessibility standards.
+                  Translated wireframes, creative mockups, and business requirements into scalable CMS-driven landing pages and digital experiences.
                 </li>
+                <li>Managed content implementation and page updates across Advocate Health Care, Aurora Health Care, Advocate Children’s, and Aurora BayCare properties.</li>
+                <li>Worked within structured enterprise CMS workflows to support scalable content management and efficient page assembly.</li>
+                <li>Coordinated updates, QA feedback, and content revisions with cross-functional teams including design, QA, marketing, and project stakeholders.</li>
+                <li>Supported ongoing website maintenance, campaign launches, and production updates within a large enterprise healthcare environment.</li>
               </ul>
             </section>
 
@@ -102,7 +104,7 @@ export default function AdvocateCaseStudy() {
                 Collaboration & Workflow
               </h2>
               <p>
-                Collaborated with cross-functional teams to translate provided wireframes and documentation into live CMS pages. Coordinated feedback as needed to ensure layout accuracy and consistency across multiple healthcare brands.
+                Collaborated with cross-functional teams including designers, QA teams, project managers, and content stakeholders to implement enterprise CMS experiences aligned with healthcare brand standards. Worked from structured documentation and wireframes to support campaign launches, ongoing content updates, and scalable digital experiences across multiple healthcare properties.
               </p>
             </section>
 

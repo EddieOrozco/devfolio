@@ -16,9 +16,21 @@ export default function Portfolio() {
     },
     {
       id: 2,
+      title: "R&L Studio",
+      description: "Digital Studio Website",
+      image: "/assets/images/rnlstudio.webp",
+      technologies: ["WordPress","HubSpot"],
+      liveUrl: "https://risenlaunchstudio.com/",
+      liveUrl2: "/projects/rnl-studio",
+      githubUrl: "#",
+      category: "WordPress · HubSpot · Front-end",
+      featured: false,
+    },
+    {
+      id: 3,
       title: "CampCo Outdoors",
       description: "To access site use this Password: password23",
-      image: "/assets/images/campco.webp",
+      image: "/assets/images/campco-outdoors.webp",
       technologies: ["Shopify","Klaviyo", "HTML Emails"],
       liveUrl: "https://campcooutdoors.myshopify.com/",
       githubUrl: "#",
@@ -27,7 +39,7 @@ export default function Portfolio() {
       featured: false,
     },
     {
-      id: 3,
+      id: 4,
       title: "Sullivan Beauty",
       description: "Full Website Redesign",
       image: "/assets/images/sullivan.webp",
@@ -38,10 +50,8 @@ export default function Portfolio() {
       category: "Front-End · CMS · Design",
       featured: false, // 👈 main featured project
     },
-    
-    
     {
-      id: 4,
+      id: 5,
       title: "The Donut Shop",
       description: "Freelance Front-End Build",
       image: "/assets/images/dds.webp",
@@ -53,7 +63,7 @@ export default function Portfolio() {
       featured: false,
     },
     {
-      id: 5,
+      id: 6,
       title: "A-baits & Tackle",
       description: "Freelance Front-End Build",
       image: "/assets/images/a-baits.webp",
@@ -64,19 +74,6 @@ export default function Portfolio() {
       category: "Front-End · Design · SEO",
       featured: false,
     },
-    
-    {
-      id: 6,
-      title: "ebeauty",
-      description: "Full Website Redesign",
-      image: "/assets/images/eb.webp",
-      technologies: ["CMS","HTML", "CSS", "JavaScript"],
-      liveUrl: "https://www.ebeautyprofessional.com/",
-      githubUrl: "#",
-      category: "Front-End",
-      featured: false,
-    },
-    
   ];
 
   const featuredProject = projects.find((p) => p.featured);

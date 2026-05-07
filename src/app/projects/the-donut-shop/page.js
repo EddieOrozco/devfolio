@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "The Donut Shop – Case Study",
   description:
-    "A playful brand and front-end build for a donut shop concept, focused on simple, friendly UI.",
+    "A front-end build for a local donut shop, focused on simple, friendly UI.",
 };
 
 export default function DonutShopCaseStudy() {

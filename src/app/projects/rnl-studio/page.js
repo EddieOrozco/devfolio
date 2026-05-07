@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "CampCo Outdoors – Case Study",
+  title: "R&L Studio – Case Study",
   description:
-    "Built a Shopify storefront with Klaviyo integration, featuring product collections, custom UI sections, and an embedded email signup form for lead capture and marketing automation.",
+    "R&L Studio is a modern digital studio focused on front-end development, CMS solutions, email marketing, and marketing automation for growing brands.",
 };
 
-export default function CampcoCaseStudy() {
+export default function RNLStudioCaseStudy() {
   return (
     <main className="bg-white">
       <section className="scroll-mt-24 py-16 md:py-24">
@@ -22,7 +22,7 @@ export default function CampcoCaseStudy() {
               Projects
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-slate-700">CampCo Outdoors</span>
+            <span className="text-slate-700">R&L Studio</span>
           </div>
 
           {/* Title */}
@@ -31,25 +31,25 @@ export default function CampcoCaseStudy() {
               Case Study
             </p>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-              CampCo Outdoors – Shopify Storefront & Klaviyo Integration
+              R&L Studio – MarTech & Digital Experience Platform
             </h1>
             <p className="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">
-              Built a Shopify storefront with Klaviyo integration, featuring product collections, custom UI sections, and an embedded email signup form for lead capture and marketing automation.
+              A modern marketing-focused website built to showcase front-end development, CMS solutions, email marketing, and automation workflows. Designed to position R&L Studio as a digital partner for growing brands through clean design, responsive development, and conversion-focused user experiences.
             </p>
 
             {/* Meta row */}
             <div className="mt-6 grid gap-4 text-xs text-slate-600 sm:grid-cols-3">
               <div>
                 <p className="font-semibold text-slate-900">Role</p>
-                <p>Front-End Development · Shopify Development · Email Marketing</p>
+                <p>Front-End Development · Marketing Systems</p>
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Tech</p>
-                <p>Shopify, Klaviyo, Custom HTML Emails</p>
+                <p>WordPress, HubSpot, Gutenberg, Custom CSS</p>
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Type</p>
-                <p>Freelance</p>
+                <p>Personal Brand / Freelance Project</p>
               </div>
             </div>
           </div>
@@ -57,10 +57,10 @@ export default function CampcoCaseStudy() {
           {/* Hero image */}
           <div className="mb-12 overflow-hidden rounded-3xl border border-slate-100 shadow-[0_20px_60px_rgba(15,23,42,0.15)]">
             <Image
-              src="/assets/images/campco-outdoors.webp"
-              alt="CampCo Outdoors Shopify storefront"
-              width={1200}
-              height={700}
+              src="/assets/images/rnlstudio.jpg"
+              alt="R&L Studio"
+              width={1920}
+              height={1800}
               className="w-full h-auto object-cover"
             />
           </div>
@@ -72,33 +72,33 @@ export default function CampcoCaseStudy() {
                 Project Overview
               </h2>
               <p>
-                CampCo Outdoors is a Shopify eCommerce storefront created to showcase responsive front-end development, Shopify theme customization, and Klaviyo marketing integration workflows. The project focuses on product collections, streamlined navigation, lead generation through embedded signup forms, and custom HTML email development for marketing automation campaigns. It was designed as a hands-on demonstration of combining Shopify storefront development with real-world MarTech implementation.
+                R&L Studio was created as a modern digital studio website focused on showcasing front-end development, CMS solutions, and marketing systems for growing brands. The project was also designed as a hands-on demonstration of building and managing a marketing-focused website using WordPress, Gutenberg, HubSpot integrations, and custom CSS enhancements.
               </p>
             </section>
 
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-2">
-                Shopify Implementation & Email Automation
+                Development & Marketing Workflow
               </h2>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  Designed and built a responsive Shopify storefront with a focus on clean UI and conversion-focused user experience 
+                  Built the website in WordPress using the Gutenberg block editor, creating reusable content sections and responsive page layouts that are easy to manage and update.
+                </li>
+                {/* <li>
+                  Customized the front-end experience with custom CSS to extend default WordPress styling and create a more polished, agency-style design system.
+                </li> */}
+                <li>
+                  Structured service pages and landing sections to clearly communicate web development, CMS management, SEO, and marketing-focused solutions.
                 </li>
                 <li>
-                  Structured product collections and navigation to support a streamlined shopping journey
+                  Implemented responsive layouts and spacing adjustments to ensure the website performs consistently across desktop, tablet, and mobile devices.
                 </li>
                 <li>
-                  Integrated Klaviyo to capture user data and support email marketing automation workflows 
+                  Embedded HubSpot forms throughout the website to capture client inquiries and connect submissions directly into HubSpot’s CRM system.
                 </li>
-                 <li>
-                  Implemented embedded signup forms and popup forms to improve lead capture 
-                </li>
-                 <li>
-                  Built a basic welcome flow to introduce the brand and engage new subscribers  
-                </li>
-                <li>
-                  Used AI-assisted tools to help generate email content variations and campaign ideas during campaign creation.
-                </li>
+                <li>Configured HubSpot form workflows and email notifications to improve lead management and streamline communication from submitted inquiries.</li>
+                <li>Focused on conversion-driven design by building strong call-to-action sections, clear navigation, and user-focused content structure throughout the site.</li>
+                {/* <li>Managed branding consistency across typography, spacing, colors, and layout components to create a cohesive digital experience aligned with the R&L Studio identity.</li> */}
               </ul>
             </section>
 
@@ -107,7 +107,7 @@ export default function CampcoCaseStudy() {
                 Implementation
               </h2>
               <p>
-                Built using Shopify’s theme architecture with modular sections and dynamic collections for scalable content management. Customized layout and styling within the theme to enhance the UI. Integrated Klaviyo by embedding a signup form via Liquid and implementing a popup form for lead capture, connecting the storefront to email marketing workflows.
+                The website was built using WordPress with HubSpot integrations and custom CSS enhancements to create a scalable and easy-to-manage marketing website. The project focused heavily on content structure, lead generation, and building a professional user experience without relying on heavy frameworks or unnecessary complexity.
               </p>
             </section>
 
@@ -116,16 +116,15 @@ export default function CampcoCaseStudy() {
                 Live Site
               </h2>
               <p className="mb-3">
-                You can explore CampCo Outdoors site here:<br/>
-                Use Password: <strong>password23</strong> 
+                You can explore the R&L Studio website here:
               </p>
               <a
-                href="https://campcooutdoors.myshopify.com/"
+                href="https://risenlaunchstudio.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full bg-teal-600 px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md shadow-teal-600/40 hover:bg-teal-700"
               >
-                Visit Campco Outdoors
+                Visit R&L Studio
                 {/* <span className="ml-2 text-sm leading-none">↗</span> */}
               </a>
             </section>
