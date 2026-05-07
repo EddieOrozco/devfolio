@@ -43,11 +43,11 @@ export default function AdvocateCaseStudy() {
             <div className="mt-6 grid gap-4 text-xs text-slate-600 sm:grid-cols-3">
               <div>
                 <p className="font-semibold text-slate-900">Role</p>
-                <p>CMS Specialist · Component-Based Content Implementation</p>
+                <p>Digital Consumer Experience Specialist · Content Management</p>
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Tech</p>
-                <p>Crownpeak, Sitecore</p>
+                <p>Sitecore, Crownpeak </p>
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Type</p>
