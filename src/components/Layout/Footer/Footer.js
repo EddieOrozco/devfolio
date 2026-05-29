@@ -89,7 +89,7 @@ export default function Footer() {
                   Eddie Orozco
                 </p>
                 <p className="text-xs text-slate-500">
-                  Front-End Developer &amp; CMS Specialist
+                  Developer/Marketer
                 </p>
               </div>
             </div>
