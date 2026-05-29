@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-white pt-28 pb-20"
+      className="relative bg-white pt-28 pb-20 lg:pt-48 lg:pb-40"
     >
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 md:flex-row md:items-center md:justify-between">
         
@@ -20,10 +20,10 @@ export default function Hero() {
 
           {/* Big title */}
           <div className="leading-[0.95]">
-            <h1 className="text-5xl font-extrabold tracking text-slate-900 sm:text-6xl">
+            <h1 className=" font-extrabold tracking text-slate-900 text-4xl lg:text-6xl">
              Hi, I'm Eddie
             </h1>
-            <h1 className="text-5xl font-extrabold tracking text-teal-600 sm:text-6xl">
+            <h1 className=" font-extrabold tracking text-teal-600 text-4xl lg:text-6xl">
               Developer/Marketer
             </h1>
           </div>
