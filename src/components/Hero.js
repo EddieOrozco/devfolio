@@ -24,7 +24,7 @@ export default function Hero() {
              Hi, I'm Eddie
             </h1>
             <h1 className="text-5xl font-extrabold tracking text-teal-600 sm:text-6xl">
-              MarTech-Focused Front-End Dev
+              Developer/Marketer
             </h1>
           </div>
 
