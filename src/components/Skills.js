@@ -11,10 +11,12 @@ export default function Skills() {
     { name: "Email Marketing", icon: "/assets/images/klaviyo.webp"},
     { name: "HubSpot", icon: "/assets/images/hubspot-logo.webp" },
     { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
+    { name: "Bootstrap", icon: "/assets/images/bootstrap.webp" },
+    { name: "Figma", icon: "/assets/images/figma.webp" },
+    { name: "Responsive", icon: "/assets/images/responsive.webp" },
     // { name: "Litmus", icon: "/assets/images/litmus-logo.webp" },
-    // { name: "Figma", icon: "/assets/images/figma.webp" },
     // { name: "Crownpeak", icon: "/assets/images/crownpeak_logo.webp"},
-    // { name: "Responsive", icon: "/assets/images/responsive.webp" },
+    
   ];
 
   return (
@@ -33,7 +35,7 @@ export default function Skills() {
           </p> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {skills.map((skill, i) => (
             <div key={skill.name} className="group relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-slate-200 to-white blur opacity-0 group-hover:opacity-100 transition" />
