@@ -4,37 +4,45 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="scroll-mt-24 bg-white py-24"
-    >
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Section heading */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-4 mb-3">
-            <span className="h-px w-14 bg-gradient-to-r from-transparent to-teal-400" />
-            <span className="text-teal-600 text-xs tracking-[0.3em] uppercase">Get To Know Me</span>
-            <span className="h-px w-14 bg-gradient-to-l from-transparent to-teal-400" />
-          </div>
+    <section id="about" className="relative scroll-mt-24 overflow-hidden bg-white py-24">
 
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+      {/* Grid background */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px), linear-gradient(90deg, var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Fade top and bottom */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Header */}
+        <div className="mb-12 text-center">
+          <div className="mb-3 inline-flex items-center gap-3">
+            <span className="h-px w-10 bg-gradient-to-r from-transparent to-teal-400" />
+            <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-teal-600">
+              Get To Know Me
+            </span>
+            <span className="h-px w-10 bg-gradient-to-l from-transparent to-teal-400" />
+          </div>
+          <h2 className="font-serif text-4xl font-bold text-slate-900 md:text-5xl">
             About Me
           </h2>
-          {/* <p className="mt-3 text-sm text-slate-500 sm:text-base">
-            Front-End developer focused on building exceptional digital experiences.
-          </p> */}
         </div>
 
         {/* Content grid */}
-        <div className="grid gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
-          
-          {/* LEFT: Image Only */}
-          <div className="relative">
-            
-            {/* Soft background accent */}
-            <div className="absolute -top-6 -left-6 h-40 w-40 rounded-3xl bg-teal-100 blur-2xl opacity-60" />
+        <div className="grid gap-12 md:grid-cols-[300px_1fr] md:items-start">
 
-            <div className="relative mx-auto w-[320px] h-[380px] overflow-hidden rounded-3xl border border-slate-100 shadow-2xl shadow-slate-900/10">
+          {/* LEFT: Photo */}
+          <div className="relative">
+            <div className="absolute -top-4 -left-4 h-24 w-24 rounded-xl bg-teal-100 z-0" />
+            <div className="absolute -bottom-3 -right-3 h-16 w-16 rounded-xl bg-teal-300/40 z-0" />
+            <div className="relative z-10 mx-auto h-[340px] w-[280px] overflow-hidden rounded-2xl border border-slate-100 shadow-2xl shadow-slate-900/10">
               <Image
                 src="/assets/images/aboutImg.webp"
                 alt="Eddie Orozco - Front-End Developer & CMS Specialist"
@@ -46,31 +54,26 @@ export default function About() {
           </div>
 
           {/* RIGHT: Copy */}
-          <div className="space-y-5 text-sm leading-relaxed text-slate-700 sm:text-base">
+          <div className="flex flex-col gap-4">
 
-            <p>
-              I build digital experiences that help brands stand out.
+            {/* Intro statement */}
+            <p className="font-serif text-2xl text-slate-900 leading-snug pb-6 border-b border-slate-100">
+              I turn ideas into websites and digital experiences that people enjoy using.
             </p>
 
-            <p>
-              With a background in front-end development and enterprise CMS platforms like Sitecore and Crownpeak, I specialize in turning creative direction into responsive, scalable websites. I focus on translating design systems into structured, component-driven pages that are easy to manage and built to perform.
+            <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
+             With experience in front-end development and CMS platforms, I build responsive, user-focused websites that balance design, performance, and maintainability. I enjoy creating digital experiences, implementing content-driven solutions, and collaborating with cross-functional teams to bring ideas from concept to launch.
             </p>
 
-            <p>
-              Alongside my enterprise CMS work, I actively build and experiment with WordPress and Shopify projects while developing email marketing workflows in Klaviyo, including signup forms, automated flows, custom HTML emails, and campaign execution focused on improving the customer journey.
-            </p>
-
-            <p>
-              I work closely with designers, marketers, and content teams to launch campaign pages, support marketing initiatives, and create flexible systems that make ongoing updates efficient and scalable.
-            </p>
-
-            <p className="font-medium text-slate-900">
+            {/* Tagline */}
+            <div className="my-1 rounded-r-lg border-l-2 border-teal-500 bg-slate-50 px-5 py-4 text-sm font-medium text-slate-800">
               Clean UI. Strong UX. Thoughtful execution.
-            </p>
+            </div>
 
-            <p>
+            <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
               Outside of development, you&apos;ll usually find me fishing, traveling, or exploring new ideas.
             </p>
+
           </div>
         </div>
       </div>

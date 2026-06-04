@@ -12,52 +12,51 @@ export default function ABaitsCaseStudy() {
     <main className="bg-white">
       <section className="scroll-mt-24 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
+
           {/* Breadcrumb */}
-          <div className="mb-6 text-sm text-slate-500">
-            <Link href="/" className="hover:text-teal-600">
+          <div className="mb-8 text-xs text-slate-400 flex items-center gap-2">
+            <Link href="/" className="hover:text-teal-600 transition-colors">
               Home
             </Link>
-            <span className="mx-2">/</span>
-            <Link href="/#projects" className="hover:text-teal-600">
+            <span>/</span>
+            <Link href="/#projects" className="hover:text-teal-600 transition-colors">
               Projects
             </Link>
-            <span className="mx-2">/</span>
-            <span className="text-slate-700">A-Baits &amp; Tackle</span>
+            <span>/</span>
+            <span className="text-slate-600">A-Baits &amp; Tackle</span>
           </div>
 
-          {/* Title */}
+          {/* Title block */}
           <div className="mb-10">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-teal-500">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-teal-600">
               Case Study
             </p>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
               A-Baits &amp; Tackle – E-commerce Concept Store
             </h1>
-            <p className="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">
-              A modern fishing gear storefront concept built with Next.js and
-              Tailwind CSS, focused on clean product layouts, clear categories,
-              and a smooth browsing experience for anglers.
+            <p className="mt-4 text-sm md:text-base text-slate-500 max-w-2xl leading-relaxed">
+              A modern fishing gear storefront concept built with Next.js and Tailwind CSS, focused on clean product layouts, clear categories, and a smooth browsing experience for anglers.
             </p>
+          </div>
 
-            {/* Meta row */}
-            <div className="mt-6 grid gap-4 text-xs text-slate-600 sm:grid-cols-3">
-              <div>
-                <p className="font-semibold text-slate-900">Role</p>
-                <p>Front-End Development · UI Design</p>
-              </div>
-              <div>
-                <p className="font-semibold text-slate-900">Tech</p>
-                <p>React, Next.js, Tailwind CSS</p>
-              </div>
-              <div>
-                <p className="font-semibold text-slate-900">Type</p>
-                <p>Freelance</p>
-              </div>
+          {/* Meta strip */}
+          <div className="mb-10 grid grid-cols-3 divide-x divide-slate-100 border border-slate-100 rounded-xl overflow-hidden bg-slate-50">
+            <div className="px-5 py-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 mb-1.5">Role</p>
+              <p className="text-xs text-slate-700 leading-relaxed">Front-End Development<br />UI Design</p>
+            </div>
+            <div className="px-5 py-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 mb-1.5">Tech</p>
+              <p className="text-xs text-slate-700 leading-relaxed">React · Next.js<br />Tailwind CSS</p>
+            </div>
+            <div className="px-5 py-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 mb-1.5">Type</p>
+              <p className="text-xs text-slate-700 leading-relaxed">Freelance</p>
             </div>
           </div>
 
           {/* Hero image */}
-          <div className="mb-12 overflow-hidden rounded-3xl border border-slate-100 shadow-[0_20px_60px_rgba(15,23,42,0.15)]">
+          <div className="mb-0 overflow-hidden rounded-2xl border border-slate-100 shadow-[0_20px_60px_rgba(15,23,42,0.12)]">
             <Image
               src="/assets/images/a-baits.webp"
               alt="A-Baits & Tackle storefront UI"
@@ -67,78 +66,80 @@ export default function ABaitsCaseStudy() {
             />
           </div>
 
-          {/* Content sections */}
-          <div className="space-y-10 text-sm md:text-base leading-relaxed text-slate-700">
-            <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-2">
-                Project Overview
-              </h2>
-              <p>
-                A-Baits & Tackle is a product showcase website built for a fishing retailer to better display in-store inventory online. The objective was to design a focused, visually organized catalog experience that allows customers to browse gear by category including baits, rods, reels, and combo kits without overwhelming the user.
-              </p>
-              <p>
-                The platform was built with scalable structure and responsive layouts to support future updates as inventory grows.
-              </p>
-            </section>
+          {/* Teal accent divider */}
+          <div className="h-[3px] rounded-b-sm bg-gradient-to-r from-teal-400 via-teal-600 to-transparent mb-12" />
 
-            <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-2">
+          {/* Content */}
+          <div className="space-y-12 text-sm md:text-base leading-relaxed text-slate-600">
+
+            {/* Overview + Scalability side by side */}
+            <div className="grid md:grid-cols-2 gap-0 border border-slate-100 rounded-xl overflow-hidden">
+              <div className="p-7 md:border-r border-slate-100">
+                {/* <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-500 mb-2">01 / Overview</p> */}
+                <h2 className="font-serif text-xl font-semibold text-slate-900 mb-3 leading-snug">
+                  Project Overview
+                </h2>
+                <p className="text-sm text-slate-500 leading-relaxed mb-3">
+                  A-Baits & Tackle is a product showcase website built for a fishing retailer to better display in-store inventory online. The objective was to design a focused, visually organized catalog experience that allows customers to browse gear by category including baits, rods, reels, and combo kits without overwhelming the user.
+                </p>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  The platform was built with scalable structure and responsive layouts to support future updates as inventory grows.
+                </p>
+              </div>
+              <div className="p-7 bg-slate-50/60">
+                {/* <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-500 mb-2">03 / Scalability</p> */}
+                <h2 className="font-serif text-xl font-semibold text-slate-900 mb-3 leading-snug">
+                  CMS &amp; Scalability Considerations
+                </h2>
+                <p className="text-sm text-slate-500 leading-relaxed mb-3">
+                  Although the current version functions as a product showcase, the front-end architecture was built with reusable, modular components that could integrate with a CMS or API-driven backend.
+                </p>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  Product grids and category layouts are structured to support dynamic data, ensuring the site can evolve as business needs grow.
+                </p>
+              </div>
+            </div>
+
+            {/* Front-End & UI Approach */}
+            <div>
+              {/* <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-500 mb-2">02 / Process</p> */}
+              <h2 className="font-serif text-xl font-semibold text-slate-900 mb-5 leading-snug">
                 Front-End &amp; UI Approach
               </h2>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>
-                  Built with <span className="font-semibold">Next.js</span> for
-                  fast, SPA-like navigation and simple deployment.
-                </li>
-                <li>
-                  Used <span className="font-semibold">Tailwind CSS</span> to
-                  rapidly iterate on layout, spacing, and a clean, modern visual
-                  system.
-                </li>
-                <li>
-                  Created reusable UI components for product cards, category
-                  sections, and hero banners to keep the layout consistent.
-                </li>
-                <li>
-                  Focused on strong typography and hierarchy so product info is
-                  easy to scan.
-                </li>
+              <ul className="space-y-3">
+                {[
+                  "Built with Next.js for fast, SPA-like navigation and simple deployment.",
+                  "Used Tailwind CSS to rapidly iterate on layout, spacing, and a clean, modern visual system.",
+                  "Created reusable UI components for product cards, category sections, and hero banners to keep the layout consistent.",
+                  "Focused on strong typography and hierarchy so product info is easy to scan.",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-slate-500 leading-relaxed">
+                    <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
               </ul>
-            </section>
+            </div>
 
-            <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-2">
-                CMS &amp; Scalability Considerations
-              </h2>
-              <p>
-                Although the current version functions as a product showcase, the front-end architecture was built with reusable, modular components that could integrate with a CMS or API-driven backend.
-              </p>
-              <p>
-                Product grids and category layouts are structured to support dynamic data, ensuring the site can evolve as business needs grow.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-2">
-                Live Demo
-              </h2>
-              <p className="mb-3">
-                You can explore the live version of the site here:
+            {/* Live site card */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 rounded-xl border border-slate-100 bg-slate-50 px-7 py-6">
+              <p className="text-sm text-slate-500 max-w-md leading-relaxed">
+                Explore the live A-Baits &amp; Tackle storefront — a clean, responsive e-commerce concept built with Next.js and Tailwind CSS.
               </p>
               <a
                 href="https://abaitsandtackle.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full bg-teal-600 px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md shadow-teal-600/40 hover:bg-teal-700"
+                className="inline-flex items-center gap-2 rounded-lg bg-teal-600 px-5 py-2.5 text-xs font-semibold uppercase tracking-wide text-white shadow-md shadow-teal-600/30 hover:bg-teal-700 transition-colors whitespace-nowrap flex-shrink-0"
               >
                 Visit A-Baits &amp; Tackle
-                {/* <span className="ml-2 text-sm leading-none">↗</span> */}
+                <span className="text-sm leading-none">↗</span>
               </a>
-            </section>
+            </div>
+
           </div>
         </div>
       </section>
     </main>
   );
 }
-

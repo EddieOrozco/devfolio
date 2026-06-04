@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://eddthedev.com"), // replace with your real domain
+  metadataBase: new URL("https://www.eddieorozco.com/"),
   title: {
     default: "Eddie – Frontend Developer",
     template: "%s | Eddie – Frontend Developer",
@@ -26,6 +26,8 @@ export const metadata = {
   keywords: [
     "Eddie",
     "Frontend Developer",
+    "Content Management System",
+    "Bootstrap",
     "React",
     "Next.js",
     "JavaScript",
@@ -33,6 +35,7 @@ export const metadata = {
     "CSS",
     "SASS",
     "HTML5",
+    "HTML",
     "CMS",
     "Developer",
     "Responsive Design",
@@ -41,7 +44,7 @@ export const metadata = {
   authors: [{ name: "Eddie" }],
   openGraph: {
     type: "website",
-    url: "https://eddthedev.com",
+    url: "https://www.eddieorozco.com/",
     siteName: "Eddie – Frontend Developer",
     title: "Eddie – Frontend Developer",
     description:
@@ -62,7 +65,7 @@ export const metadata = {
   //   description:
   //     "Front-end developer passionate about creating innovative web solutions.",
   //   images: ["/og-portfolio.jpg"],
-  //   creator: "@eddthedev", // optional: your Twitter handle
+  //   creator: "@eddieorozco", // optional: your Twitter handle
   // },
   robots: {
     index: true,
@@ -71,11 +74,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
+    { url: "/favicon.ico" },
+    { url: "/favicon.svg", type: "image/svg+xml" },
+    { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+  ],
+  apple: "/apple-touch-icon.png",
   },
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -34,18 +35,17 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between py-4">
+
           {/* Brand */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-500 text-white text-sm font-semibold transition group-hover:scale-105">
-              EO
-            </div>
-            <div className="leading-tight">
-              <span className="block text-lg font-semibold text-slate-900">
-                Eddie Orozco
-              </span>
-              {/* <span className="block text-xs text-slate-500">
-                Front-End Developer
-              </span> */}
+          <Link href="/" className="group flex items-center transition">
+            <div className="relative h-10 w-32 overflow-hidden transition group-hover:opacity-80">
+              <Image
+                src="/assets/images/logo-main.png"
+                alt="Eddie Orozco logo"
+                fill
+                className="object-contain object-left"
+                priority
+              />
             </div>
           </Link>
 
@@ -58,16 +58,19 @@ export default function Header() {
                 className="group relative text-slate-600 transition hover:text-slate-900"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-teal-500 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 h-[1.5px] w-0 bg-teal-500 transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
 
             {/* CTA Button */}
             <Link
               href="mailto:eddieorozco231@gmail.com"
-              className="ml-4 rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-slate-800"
+              className="ml-2 inline-flex items-center gap-1.5 rounded-lg bg-teal-600 px-5 py-2 text-sm font-medium text-white shadow-md shadow-teal-600/20 transition hover:bg-teal-700"
             >
-              Let’s Work Together
+              Let&apos;s Work Together
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
             </Link>
           </nav>
 
@@ -75,6 +78,7 @@ export default function Header() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-slate-900"
+            aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -83,26 +87,25 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200">
-          <div className="flex flex-col px-6 py-4 space-y-4 text-sm">
+        <div className="md:hidden bg-white border-t border-slate-100">
+          <div className="flex flex-col px-6 py-5 space-y-4 text-sm">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-slate-600 hover:text-slate-900"
+                className="text-slate-600 hover:text-slate-900 transition"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-
-            <a
-              href="#contact"
+            <Link
+              href="mailto:eddieorozco231@gmail.com"
               onClick={() => setIsOpen(false)}
-              className="rounded-full bg-slate-900 px-5 py-2 text-center text-white font-medium"
+              className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-teal-600 px-5 py-2.5 text-center text-sm font-medium text-white transition hover:bg-teal-700"
             >
-              Let’s Work Together
-            </a>
+              Let&apos;s Work Together
+            </Link>
           </div>
         </div>
       )}

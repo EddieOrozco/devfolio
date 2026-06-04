@@ -1,69 +1,85 @@
 // src/components/Hero.js
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-white pt-28 pb-20 lg:pt-48 lg:pb-40"
+      className="relative overflow-hidden bg-white pt-28 pb-20 lg:pt-48 lg:pb-40"
     >
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 md:flex-row md:items-center md:justify-between">
-        
+      {/* Grid background */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px), linear-gradient(90deg, var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Fade out grid at bottom */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
+
+      {/* Teal accent line at top */}
+      <div className="absolute top-0 left-6 right-6 h-[2px] rounded-b-sm bg-gradient-to-r from-teal-400 via-teal-600 to-transparent" />
+
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 md:flex-row md:items-center md:justify-between">
+
         {/* LEFT: Text */}
         <div className="w-full space-y-6 md:w-1/2">
-          
-          {/* Small top line */}
-          <p className="text-xs tracking-[0.25em] text-slate-400">
-            Front-End · CMS · Email Marketing · Marketing Automation
-          </p>
 
-          {/* Big title */}
-          <div className="leading-[0.95]">
-            <h1 className=" font-extrabold tracking text-slate-900 text-4xl lg:text-6xl">
-             Hi, I'm Eddie
+          {/* Eyebrow */}
+          <div className="flex items-center gap-3">
+            <div className="h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
+              Front-End · CMS Management · Responsive Design · UI Implementation
+            </p>
+          </div>
+
+          {/* Title */}
+          <div className="leading-[1.05]">
+            <h1 className="font-serif text-4xl font-bold text-slate-900 lg:text-6xl">
+              Hi, I'm Eddie
             </h1>
-            <h1 className=" font-extrabold tracking text-teal-600 text-4xl lg:text-6xl">
-              Developer/Marketer
+            <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
+              Front-End Developer & CMS Specialist
             </h1>
           </div>
 
-          {/* Supporting paragraph */}
-          <p className="max-w-lg text-base text-slate-700 sm:text-lg">
-            I build marketing-focused digital systems that connect CMS platforms, email automation, and front-end experiences to support real campaign execution.
+          {/* Description */}
+          <p className="max-w-lg text-sm text-slate-500 sm:text-base leading-relaxed">
+            Building responsive websites, managing CMS platforms, and creating digital experiences that help businesses grow.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-4 pt-2">
-            <a
+          {/* CTA */}
+          <div className="pt-2">
+            <Link
               href="#projects"
-              className="inline-flex items-center justify-center rounded-full bg-teal-600 px-7 py-3 text-sm font-semibold text-white shadow-md shadow-teal-600/30 transition hover:bg-teal-700"
+              className="inline-flex items-center gap-2 rounded-lg bg-teal-600 px-6 py-3 text-sm font-medium text-white shadow-md shadow-teal-600/30 transition hover:bg-teal-700"
             >
               View My Projects
-            </a>
-
-            {/* <a
-              href="#cms"
-              className="inline-flex items-center justify-center rounded-full border border-slate-900 px-7 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-900 hover:text-white"
-            >
-              View CMS Work
-            </a> */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </Link>
           </div>
         </div>
 
-        {/* RIGHT: Image + subtle teal blocks */}
+        {/* RIGHT: Photo */}
         <div className="w-full md:w-1/2">
           <div className="relative mx-auto max-w-sm">
-            
-            {/* Background teal blocks */}
-            <div className="absolute -top-12 right-0 h-36 w-72 rounded-3xl bg-teal-200" />
-            <div className="absolute top-20 right-12 h-28 w-64 rounded-3xl bg-teal-500/30" />
+
+            {/* Teal decorative blocks */}
+            <div className="absolute -top-4 right-0 h-28 w-28 rounded-xl bg-teal-100" />
+            <div className="absolute bottom-[-12px] left-[-12px] h-20 w-20 rounded-xl bg-teal-300/40" />
 
             {/* Photo */}
-            <div className="relative mx-auto mt-6 h-72 w-72 overflow-hidden rounded-3xl border-4 border-white bg-slate-200 shadow-2xl shadow-slate-900/15">
+            <div className="relative mx-auto mt-6 h-72 w-72 overflow-hidden rounded-2xl border border-slate-100 bg-slate-200 shadow-2xl shadow-slate-900/15 z-10">
               <Image
                 src="/assets/images/hero-image-main.webp"
-                alt="Eddie - Front-End Developer & CMS Specialist"
+                alt="Eddie - Front-End Developer & Marketer"
                 fill
                 className="object-cover"
                 priority

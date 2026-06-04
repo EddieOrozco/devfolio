@@ -1,3 +1,5 @@
+// src/components/Skills.js
+
 import Image from "next/image";
 
 export default function Skills() {
@@ -8,56 +10,72 @@ export default function Skills() {
     { name: "Shopify", icon: "/assets/images/shopify.webp" },
     { name: "WordPress", icon: "/assets/images/wp.webp" },
     { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
-    { name: "Email Marketing", icon: "/assets/images/klaviyo.webp"},
+    { name: "Email Marketing", icon: "/assets/images/klaviyo.webp" },
     { name: "HubSpot", icon: "/assets/images/hubspot-logo.webp" },
     { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
     { name: "Bootstrap", icon: "/assets/images/bootstrap.webp" },
     { name: "Figma", icon: "/assets/images/figma.webp" },
     { name: "Responsive", icon: "/assets/images/responsive.webp" },
-    // { name: "Litmus", icon: "/assets/images/litmus-logo.webp" },
-    // { name: "Crownpeak", icon: "/assets/images/crownpeak_logo.webp"},
-    
   ];
 
   return (
-    <section id="skills" className="scroll-mt-24 bg-[#f6f9fc] py-24">
-    
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-4 mb-3">
-            <span className="h-px w-14 bg-gradient-to-r from-transparent to-teal-400" />
-            <span className="text-teal-600 text-xs tracking-[0.3em] uppercase">Tech Arsenal</span>
-            <span className="h-px w-14 bg-gradient-to-l from-transparent to-teal-400" />
+    <section id="skills" className="relative scroll-mt-24 overflow-hidden bg-white py-24">
+
+      {/* Grid background */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px), linear-gradient(90deg, var(--color-border-tertiary, #e5e7eb) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Fade top and bottom */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Header */}
+        <div className="mb-12 text-center">
+          <div className="mb-3 inline-flex items-center gap-3">
+            <span className="h-px w-10 bg-gradient-to-r from-transparent to-teal-400" />
+            <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-teal-600">
+              Tech Arsenal
+            </span>
+            <span className="h-px w-10 bg-gradient-to-l from-transparent to-teal-400" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900">Skills & Technologies</h2>
-          {/* <p className="mt-3 text-slate-700 max-w-2xl mx-auto">
-            A toolkit I use to deliver clean, accessible, and performant UIs.
-          </p> */}
+          <h2 className="font-serif text-4xl font-bold text-slate-900 md:text-5xl">
+            Skills &amp; Technologies
+          </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {skills.map((skill, i) => (
-            <div key={skill.name} className="group relative">
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-slate-200 to-white blur opacity-0 group-hover:opacity-100 transition" />
-              <div className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <div className="absolute top-3 right-3">
-                </div>
-                <div className="text-center">
-                  <div className="flex justify-center mb-4">
-                    <Image
-                      src={skill.icon}
-                      alt={`${skill.name} icon`}
-                      width={64}
-                      height={64}
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-slate-900">{skill.name}</h3>
-                </div>
+        {/* Skills grid */}
+        <div
+          className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 md:grid-cols-3 lg:grid-cols-4"
+          style={{ gap: "1px", background: "var(--color-border-tertiary, #e5e7eb)" }}
+        >
+          {skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="group flex flex-col items-center gap-3 bg-white px-4 py-7 transition-colors duration-150 hover:bg-slate-50"
+            >
+              <div className="flex h-14 w-14 items-center justify-center">
+                <Image
+                  src={skill.icon}
+                  alt={`${skill.name} icon`}
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 object-contain"
+                />
               </div>
+              <span className="text-center text-xs font-medium text-slate-800">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
