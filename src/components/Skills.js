@@ -6,16 +6,18 @@ export default function Skills() {
   const skills = [
     { name: "HTML5", icon: "/assets/images/html-5.webp" },
     { name: "CSS3", icon: "/assets/images/css3.webp" },
+    { name: "SASS", icon: "/assets/images/sass-img.png" },
     { name: "JavaScript", icon: "/assets/images/javascript.webp" },
     { name: "Shopify", icon: "/assets/images/shopify.webp" },
     { name: "WordPress", icon: "/assets/images/wp.webp" },
-    { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
     { name: "Email Marketing", icon: "/assets/images/klaviyo.webp" },
     { name: "HubSpot", icon: "/assets/images/hubspot-logo.webp" },
     { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
     { name: "Bootstrap", icon: "/assets/images/bootstrap.webp" },
     { name: "Figma", icon: "/assets/images/figma.webp" },
-    { name: "Responsive", icon: "/assets/images/responsive.webp" },
+    { name: "Git", icon: "/assets/images/git.webp" },
+
+    
   ];
 
   return (
