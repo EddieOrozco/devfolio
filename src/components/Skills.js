@@ -15,9 +15,7 @@ export default function Skills() {
     { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
     { name: "Bootstrap", icon: "/assets/images/bootstrap.webp" },
     { name: "Figma", icon: "/assets/images/figma.webp" },
-    { name: "Git", icon: "/assets/images/git.webp" },
-
-    
+    { name: "Git", icon: "/assets/images/Git.webp" },
   ];
 
   return (
