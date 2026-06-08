@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex items-center gap-3">
             <div className="h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0" />
             <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
-              Front-End · CMS Management · Responsive Design · UI Implementation
+              Web Development · CMS Management · AI-Enhanced Solutions 
             </p>
           </div>
 
@@ -44,13 +44,13 @@ export default function Hero() {
               Hi, I'm Eddie
             </h1>
             <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
-              Front-End Developer & CMS Specialist
+              Web Developer & CMS Specialist
             </h1>
           </div>
 
           {/* Description */}
           <p className="max-w-lg text-sm text-slate-500 sm:text-base leading-relaxed">
-            Building responsive websites, managing CMS platforms, and creating digital experiences that help businesses grow.
+            Developing responsive websites, managing CMS platforms, and delivering AI-enhanced solutions that improve user experiences.
           </p>
 
           {/* CTA */}

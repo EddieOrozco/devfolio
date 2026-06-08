@@ -62,7 +62,7 @@ export default function About() {
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
-             With experience in front-end development and CMS platforms, I build responsive, user-focused websites that balance design, performance, and maintainability. I enjoy creating digital experiences, implementing content-driven solutions, and collaborating with cross-functional teams to bring ideas from concept to launch.
+             I enjoy building websites that balance usability, performance, and maintainability. Throughout my career, I've contributed to website redesigns, implemented front-end enhancements, and managed content across CMS platforms for a variety of brands and organizations. I'm passionate about continuous learning and regularly explore AI-enhanced workflows, modern web technologies, and digital marketing tools.
             </p>
 
             {/* Tagline */}
@@ -71,7 +71,7 @@ export default function About() {
             </div>
 
             <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
-              Outside of development, you&apos;ll usually find me fishing, traveling, or exploring new ideas.
+              Outside of development, you'll usually find me fishing, traveling, or working on new ideas and side projects.
             </p>
 
           </div>
