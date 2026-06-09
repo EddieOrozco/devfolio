@@ -32,9 +32,10 @@ export default function Hero() {
 
           {/* Eyebrow */}
           <div className="flex items-center gap-3">
-            <div className="h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0" />
             <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
-              Web Development · CMS Management · AI-Enhanced Solutions 
+              <span className="text-teal-500 text-lg">·</span> Web Development{" "}
+              <span className="text-teal-500 text-lg">·</span> CMS Management{" "}
+              <span className="text-teal-500 text-lg">·</span> AI-Enhanced Solutions
             </p>
           </div>
 
