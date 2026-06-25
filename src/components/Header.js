@@ -38,9 +38,9 @@ export default function Header() {
 
           {/* Brand */}
           <Link href="/" className="group flex items-center transition">
-            <div className="relative h-10 w-32 overflow-hidden transition group-hover:opacity-80">
+            <div className="relative h-14 w-44 sm:h-12 sm:w-32 lg:h-14 lg:w-40 overflow-hidden transition group-hover:opacity-80">
               <Image
-                src="/assets/images/logo-main.png"
+                src="/assets/images/e-logo.png"
                 alt="Eddie Orozco logo"
                 fill
                 className="object-contain object-left"

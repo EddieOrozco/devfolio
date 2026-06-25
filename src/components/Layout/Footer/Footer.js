@@ -54,9 +54,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs space-y-5">
             <Link href="/" className="inline-block">
-              <div className="relative h-9 w-32 overflow-hidden">
+              <div className="relative h-14 w-44 sm:h-10 sm:w-32 overflow-hidden">
                 <Image
-                  src="/assets/images/logo-main.png"
+                  src="/assets/images/e-logo.png"
                   alt="Eddie Orozco logo"
                   fill
                   className="object-contain object-left"
