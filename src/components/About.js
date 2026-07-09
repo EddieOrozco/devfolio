@@ -23,13 +23,13 @@ export default function About() {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="mb-3 inline-flex items-center gap-3">
+          {/* <div className="mb-3 inline-flex items-center gap-3">
             <span className="h-px w-10 bg-gradient-to-r from-transparent to-teal-400" />
             <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-teal-600">
               Get To Know Me
             </span>
             <span className="h-px w-10 bg-gradient-to-l from-transparent to-teal-400" />
-          </div>
+          </div> */}
           <h2 className="font-serif text-4xl font-bold text-slate-900 md:text-5xl">
             About Me
           </h2>
@@ -44,7 +44,8 @@ export default function About() {
             <div className="absolute -bottom-3 -right-3 h-16 w-16 rounded-xl bg-teal-300/40 z-0" />
             <div className="relative z-10 mx-auto h-[340px] w-[280px] overflow-hidden rounded-2xl border border-slate-100 shadow-2xl shadow-slate-900/10">
               <Image
-                src="/assets/images/aboutImg.webp"
+                // src="/assets/images/aboutImg.webp"
+                src="/assets/images/about-img.webp"
                 alt="Eddie Orozco - Front-End Developer & CMS Specialist"
                 fill
                 className="object-cover"
@@ -58,21 +59,25 @@ export default function About() {
 
             {/* Intro statement */}
             <p className="font-serif text-2xl text-slate-900 leading-snug pb-6 border-b border-slate-100">
-              I turn ideas into websites and digital experiences that people enjoy using.
+              I keep content moving, and I never stop learning.
             </p>
 
-            <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
-             I enjoy building websites that balance usability, performance, and maintainability. Throughout my career, I've contributed to website redesigns, implemented front-end enhancements, and managed content across CMS platforms for a variety of brands and organizations. I'm passionate about continuous learning and regularly explore AI-enhanced workflows, modern web technologies, and digital marketing tools.
-            </p>
+            <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+             As a CMS Specialist with a background in front-end development, I manage enterprise web content, publishing workflows, and page lifecycle updates across large-scale CMS platforms. I work closely with stakeholders, designers, and developers to deliver accurate, organized digital experiences.
+           </p>
+           <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+             My experience spans website redesigns in the beauty industry and enterprise healthcare content operations, including large-scale CMS migrations and ongoing content governance. Alongside my CMS work, I've expanded my skills into HTML email development, Klaviyo, and AI-assisted workflows that improve efficiency and streamline production.
+           </p>
+
 
             {/* Tagline */}
-            <div className="my-1 rounded-r-lg border-l-2 border-teal-500 bg-slate-50 px-5 py-4 text-sm font-medium text-slate-800">
+            {/* <div className="my-1 rounded-r-lg border-l-2 border-teal-500 bg-slate-50 px-5 py-4 text-sm font-medium text-slate-800">
               Clean UI. Strong UX. Thoughtful execution.
             </div>
 
             <p className="text-sm leading-relaxed text-slate-500 sm:text-base">
               Outside of development, you'll usually find me fishing, traveling, or working on new ideas and side projects.
-            </p>
+            </p> */}
 
           </div>
         </div>

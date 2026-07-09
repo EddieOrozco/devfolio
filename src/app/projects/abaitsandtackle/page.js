@@ -32,10 +32,10 @@ export default function ABaitsCaseStudy() {
               Case Study
             </p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
-              A-Baits &amp; Tackle – E-commerce Concept Store
+              A-Baits &amp; Tackle – Front-End Build
             </h1>
             <p className="mt-4 text-sm md:text-base text-slate-500 max-w-2xl leading-relaxed">
-              A modern fishing gear storefront concept built with Next.js and Tailwind CSS, focused on clean product layouts, clear categories, and a smooth browsing experience for anglers.
+              A modern fishing gear storefront built with Next JS, Tailwind, focused on clean product layouts, clear categories, and a smooth browsing experience for anglers.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function ABaitsCaseStudy() {
             </div>
             <div className="px-5 py-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 mb-1.5">Type</p>
-              <p className="text-xs text-slate-700 leading-relaxed">Freelance</p>
+              <p className="text-xs text-slate-700 leading-relaxed">Freelance <br /> Product Showcase Site</p>
             </div>
           </div>
 
@@ -80,10 +80,10 @@ export default function ABaitsCaseStudy() {
                   Project Overview
                 </h2>
                 <p className="text-sm text-slate-500 leading-relaxed mb-3">
-                  A-Baits & Tackle is a product showcase website built for a fishing retailer to better display in-store inventory online. The objective was to design a focused, visually organized catalog experience that allows customers to browse gear by category including baits, rods, reels, and combo kits without overwhelming the user.
+                  A-Baits & Tackle was a product showcase website built for an independently owned fishing and tackle retailer, designed to bring the in-store inventory online and help attract new customers. The site focused on a clean, organized catalog experience, allowing customers to browse gear by category, including baits, rods, reels, and combo kits, without overwhelming the user.
                 </p>
                 <p className="text-sm text-slate-500 leading-relaxed">
-                  The platform was built with scalable structure and responsive layouts to support future updates as inventory grows.
+                  The platform was built with a scalable structure and responsive layouts to support future updates as inventory grew. The store has since closed as the owner moved into retirement. The site remains live here as a showcase of the original build.
                 </p>
               </div>
               <div className="p-7 bg-slate-50/60">
@@ -92,10 +92,10 @@ export default function ABaitsCaseStudy() {
                   CMS &amp; Scalability Considerations
                 </h2>
                 <p className="text-sm text-slate-500 leading-relaxed mb-3">
-                  Although the current version functions as a product showcase, the front-end architecture was built with reusable, modular components that could integrate with a CMS or API-driven backend.
+                  Although this version functioned as a straightforward product showcase, the front-end architecture was built with reusable, modular components designed to integrate with a CMS or API-driven backend if the business had needed to scale.
                 </p>
                 <p className="text-sm text-slate-500 leading-relaxed">
-                  Product grids and category layouts are structured to support dynamic data, ensuring the site can evolve as business needs grow.
+                  Product grids and category layouts were structured to support dynamic data, demonstrating how the site could have evolved to support a growing inventory or a future e-commerce buildout.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function ABaitsCaseStudy() {
             {/* Live site card */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 rounded-xl border border-slate-100 bg-slate-50 px-7 py-6">
               <p className="text-sm text-slate-500 max-w-md leading-relaxed">
-                Explore the live A-Baits &amp; Tackle storefront — a clean, responsive e-commerce concept built with Next.js and Tailwind CSS.
+                Explore the A-Baits & Tackle site. A clean, responsive product showcase built with Next.js and Tailwind, kept live as an example of the original build.
               </p>
               <a
                 href="https://abaitsandtackle.com/"

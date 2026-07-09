@@ -117,7 +117,7 @@ export default function DonutShopCaseStudy() {
             {/* Live site card */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 rounded-xl border border-slate-100 bg-slate-50 px-7 py-6">
               <p className="text-sm text-slate-500 max-w-md leading-relaxed">
-                Explore the live Donut Shop site — a lightweight, responsive landing page built to showcase a local brand's personality and menu.
+                Explore the live Donut Shop site. A lightweight, responsive landing page built to showcase a local brand's personality and menu.
               </p>
               <a
                 href="https://www.thedonutshop.shop"

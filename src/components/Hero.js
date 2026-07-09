@@ -32,26 +32,36 @@ export default function Hero() {
 
           {/* Eyebrow */}
           <div className="flex items-center gap-3">
-            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
-              <span className="text-teal-500 text-lg">·</span> Web Development{" "}
-              <span className="text-teal-500 text-lg">·</span> CMS Management{" "}
-              <span className="text-teal-500 text-lg">·</span> AI-Enhanced Solutions
+            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-500">
+              {/* Mobile: shortened */}
+              <span className="sm:hidden">
+                <span className="text-teal-500 text-lg">·</span> CMS{" "}
+                <span className="text-teal-500 text-lg">·</span> PUBLISHING{" "}
+                <span className="text-teal-500 text-lg">·</span> EMAIL
+              </span>
+
+              {/* Desktop: full version */}
+              <span className="hidden sm:inline">
+                <span className="text-teal-500 text-lg">·</span> CMS MANAGEMENT{" "}
+                <span className="text-teal-500 text-lg">·</span> WEB PUBLISHING{" "}
+                <span className="text-teal-500 text-lg">·</span> EMAIL DEVELOPMENT
+              </span>
             </p>
           </div>
 
           {/* Title */}
           <div className="leading-[1.05]">
             <h1 className="font-serif text-4xl font-bold text-slate-900 lg:text-6xl">
-              Hi, I'm Eddie
+              Hi, I'm Eddie 
             </h1>
             <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
-              Web Developer & CMS Specialist
+              CMS Specialist
             </h1>
           </div>
 
           {/* Description */}
-          <p className="max-w-lg text-sm text-slate-500 sm:text-base leading-relaxed">
-            Developing responsive websites, managing CMS platforms, and delivering AI-enhanced solutions that improve user experiences.
+          <p className="max-w-md text-sm text-slate-600 sm:text-base leading-relaxed">
+            I manage enterprise web content and publishing workflows across large-scale CMS platforms, backed by experience in front-end and HTML email development.
           </p>
 
           {/* CTA */}
@@ -79,7 +89,9 @@ export default function Hero() {
             {/* Photo */}
             <div className="relative mx-auto mt-6 h-72 w-72 overflow-hidden rounded-2xl border border-slate-100 bg-slate-200 shadow-2xl shadow-slate-900/15 z-10">
               <Image
-                src="/assets/images/hero-image-main.webp"
+              
+              // src="/assets/images/placeholder.png"
+                src="/assets/images/hero-main.webp"
                 alt="Eddie - Front-End Developer & Marketer"
                 fill
                 className="object-cover"

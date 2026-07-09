@@ -65,9 +65,9 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="text-sm text-slate-500 leading-relaxed">
+            {/* <p className="text-sm text-slate-500 leading-relaxed">
               Turning ideas into websites and digital experiences that people enjoy using.
-            </p>
+            </p> */}
 
             <div>
               <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
@@ -117,9 +117,9 @@ export default function Footer() {
               <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
                 Availability
               </p>
-              <p className="text-sm text-slate-500 leading-relaxed">
+              {/* <p className="text-sm text-slate-500 leading-relaxed">
                 Open to opportunities in Front-end development and CMS management.
-              </p>
+              </p> */}
               <a
                 href="mailto:eddieorozco231@gmail.com"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-teal-600 px-4 py-2.5 text-xs font-medium uppercase tracking-wide text-white shadow-md shadow-teal-600/20 transition hover:bg-teal-700"

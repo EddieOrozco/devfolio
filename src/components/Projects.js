@@ -8,62 +8,82 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Advocate Health Care",
-      description: "CMS Component-Based Website",
+      description: "Enterprise CMS",
       image: "/assets/images/aah.webp",
-      technologies: ["Crownpeak", "Sitecore"],
+      technologies: ["Crownpeak", "Sitecore","Content Management","Web Publishing"],
       liveUrl: "https://www.advocatehealth.com/",
       liveUrl2: "/projects/advocate-health-care",
-      category: "Enterprise CMS · Content Authoring",
+      category: "Professional Experience · CMS Specialist",
     },
     {
       id: 2,
       title: "Sullivan Beauty",
-      description: "Full Website Redesign",
+      description: "Front-End Development",
       image: "/assets/images/sullivan.webp",
-      technologies: ["CMS", "HTML", "SCSS", "JavaScript"],
+      technologies: ["CMS", "HTML", "SCSS", "JavaScript","Web Publishing"],
       liveUrl: "https://www.sullivanbeauty.com/",
       liveUrl2: "/projects/sullivan-beauty",
-      category: "Front-End · CMS · Design",
+      category: "Professional Experience · Front-End Developer ",
     },
     {
       id: 3,
-      title: "R&L Studio",
-      description: "Digital Studio Website",
-      image: "/assets/images/rnlstudio.webp",
-      technologies: ["WordPress", "HubSpot"],
-      liveUrl: "https://risenlaunchstudio.com/",
-      liveUrl2: "/projects/rnl-studio",
-      category: "WordPress · HubSpot · Front-End",
+      title: "Campco Outdoors",
+      description: "Promotional HTML Email",
+      image: "/assets/images/campco-icon.png",
+      technologies: ["HTML", "MJML", "Design", "Responsive"],
+      liveUrl: "https://campco-outdoors-promo.vercel.app/",
+      // liveUrl2: "/projects/rnl-studio",
+      category: "Promo HTML Email · AI Visual Creation",
     },
     {
       id: 4,
-      title: "CampCo Outdoors",
-      description: "Password: password23",
-      image: "/assets/images/campco-outdoors.webp",
-      technologies: ["Shopify", "Klaviyo", "HTML Emails"],
-      liveUrl: "https://campcooutdoors.myshopify.com/",
-      liveUrl2: "/projects/campco",
-      category: "Shopify · Klaviyo · Email Marketing",
+      title: "Morning Sip Café",
+      description: "Promotional HTML Email",
+      image: "/assets/images/cafe.jpg",
+      technologies: ["MJML", "HTML","Design", "Responsive"],
+      liveUrl: "https://morning-sip-cafe-promo.vercel.app/",
+      // liveUrl2: "/projects/campco",
+      category: "Promo HTML Email · AI Visual Creation",
     },
+    // {
+    //   id: 6,
+    //   title: "R&L Studio",
+    //   description: "Digital Studio Website",
+    //   image: "/assets/images/rnlstudio.webp",
+    //   technologies: ["WordPress", "HubSpot"],
+    //   liveUrl: "https://risenlaunchstudio.com/",
+    //   liveUrl2: "/projects/rnl-studio",
+    //   category: "WordPress · HubSpot · Front-End",
+    // },
+    // {
+    //   id: 7,
+    //   title: "CampCo Outdoors",
+    //   description: "Password: password23",
+    //   image: "/assets/images/campco-outdoors.webp",
+    //   technologies: ["Shopify", "Klaviyo", "HTML Emails"],
+    //   liveUrl: "https://campcooutdoors.myshopify.com/",
+    //   liveUrl2: "/projects/campco",
+    //   category: "Shopify · Klaviyo · Email Marketing",
+    // },
     {
       id: 5,
       title: "The Donut Shop",
-      description: "Freelance Front-End Build",
+      description: "Front-End Development",
       image: "/assets/images/dds.webp",
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS","Design"],
       liveUrl: "https://www.thedonutshop.shop",
       liveUrl2: "/projects/the-donut-shop",
-      category: "Front-End · Design · Image Optimization",
+      category: "Freelance · Front-End · Design · Image Optimization",
     },
     {
       id: 6,
       title: "A-Baits & Tackle",
-      description: "Freelance Front-End Build",
+      description: "Front-End Development",
       image: "/assets/images/a-baits.webp",
-      technologies: ["React", "Next.js", "Tailwind"],
+      technologies: ["HTML","Tailwind", "JavaScript","Design" ],
       liveUrl: "https://abaitsandtackle.com/",
       liveUrl2: "/projects/abaitsandtackle",
-      category: "Front-End · Design · SEO",
+      category: "Freelance · Front-End · Design · Image Optimization",
     },
   ];
 
@@ -87,13 +107,13 @@ export default function Portfolio() {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="mb-3 inline-flex items-center gap-3">
+          {/* <div className="mb-3 inline-flex items-center gap-3">
             <span className="h-px w-10 bg-gradient-to-r from-transparent to-teal-400" />
             <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-teal-600">
               Selected Works
             </span>
             <span className="h-px w-10 bg-gradient-to-l from-transparent to-teal-400" />
-          </div>
+          </div> */}
           <h2 className="font-serif text-4xl font-bold text-slate-900 md:text-5xl">
             My Projects
           </h2>

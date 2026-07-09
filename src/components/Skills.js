@@ -6,16 +6,17 @@ export default function Skills() {
   const skills = [
     { name: "HTML5", icon: "/assets/images/html-5.webp" },
     { name: "CSS3", icon: "/assets/images/css3.webp" },
-    { name: "SASS", icon: "/assets/images/sass-img.png" },
     { name: "JavaScript", icon: "/assets/images/javascript.webp" },
-    { name: "Shopify", icon: "/assets/images/shopify.webp" },
-    { name: "WordPress", icon: "/assets/images/wp.webp" },
-    { name: "Email Marketing", icon: "/assets/images/klaviyo.webp" },
-    { name: "HubSpot", icon: "/assets/images/hubspot-logo.webp" },
-    { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
-    { name: "Bootstrap", icon: "/assets/images/bootstrap.webp" },
     { name: "Figma", icon: "/assets/images/figma.webp" },
+    { name: "Sitecore", icon: "/assets/images/sitecore.webp" },
+    { name: "WordPress", icon: "/assets/images/wp.webp" },
+    { name: "Shopify", icon: "/assets/images/shopify.webp" },
     { name: "Git", icon: "/assets/images/Git.webp" },
+    { name: "Google Analytics", icon: "/assets/images/google-analytics.webp" },
+    { name: "Klaviyo", icon: "/assets/images/klaviyo.webp" },
+    { name: "HTML Email", icon: "/assets/images/mjml.webp" },
+    { name: "HubSpot", icon: "/assets/images/hubspot-logo.webp" },
+    // { name: "Litmus", icon: "/assets/images/litmus-logo.webp" },
   ];
 
   return (
@@ -38,13 +39,13 @@ export default function Skills() {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="mb-3 inline-flex items-center gap-3">
+          {/* <div className="mb-3 inline-flex items-center gap-3">
             <span className="h-px w-10 bg-gradient-to-r from-transparent to-teal-400" />
             <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-teal-600">
               Tech Arsenal
             </span>
             <span className="h-px w-10 bg-gradient-to-l from-transparent to-teal-400" />
-          </div>
+          </div> */}
           <h2 className="font-serif text-4xl font-bold text-slate-900 md:text-5xl">
             Skills &amp; Technologies
           </h2>
@@ -69,7 +70,7 @@ export default function Skills() {
                   className="h-12 w-12 object-contain"
                 />
               </div>
-              <span className="text-center text-xs font-medium text-slate-800">
+              <span className="text-center text-sm font-medium text-slate-800">
                 {skill.name}
               </span>
             </div>
