@@ -18,21 +18,34 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL("https://www.eddieorozco.com/"),
   title: {
-    default: "Eddie – Frontend Developer",
+    default: "Eddie – CMS, Frontend & Email Developer",
     template: "%s | Eddie – Frontend Developer",
   },
   description:
-    "Front-end developer passionate about creating innovative web solutions and delivering exceptional user experiences.",
+    "I manage enterprise web content and publishing workflows across large-scale CMS platforms, combining content operations expertise with front-end and HTML email development experience.",
   keywords: [
     "Eddie",
     "Frontend Developer",
+    "HTML Email Developer",
+    "Email Developer",
+    "MJML",
+    "CMS Specialist",
     "Content Management System",
+    "Klaviyo",
+    "WordPress",
+    "Shopify",
+    "Sitecore",
+    "HubSpot",
+    "Git",
+    "Design",
+    "Web Publishing",
     "Bootstrap",
     "React",
     "Next.js",
     "JavaScript",
     "TailwindCSS",
     "CSS",
+    "CSS3",
     "SASS",
     "HTML5",
     "HTML",
@@ -40,13 +53,15 @@ export const metadata = {
     "Developer",
     "Responsive Design",
     "Web Portfolio",
+    "Google Analytics",
+    "PostHog"
   ],
   authors: [{ name: "Eddie" }],
   openGraph: {
     type: "website",
     url: "https://www.eddieorozco.com/",
-    siteName: "Eddie – Frontend Developer",
-    title: "Eddie – Frontend Developer",
+    siteName: "Eddie – CMS Specialist, Frontend & Email Developer",
+    title: "Eddie – CMS Specialist, Frontend & Email Developer",
     description:
       "Showcasing projects, skills, and innovative web development work.",
     images: [
@@ -54,7 +69,7 @@ export const metadata = {
         url: "/og-portfolio.jpg", // put a 1200x630 image in /public
         width: 1200,
         height: 630,
-        alt: "Eddie – Frontend Developer Portfolio",
+        alt: "Eddie – CMS Specialist, Frontend & Email Developer",
       },
     ],
     locale: "en_US",
