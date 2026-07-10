@@ -52,10 +52,13 @@ export default function Hero() {
           {/* Title */}
           <div className="leading-[1.05]">
             <h1 className="font-serif text-4xl font-bold text-slate-900 lg:text-6xl">
-              Hi, I'm Eddie 
+              Hi, I'm Eddie! 
             </h1>
             <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
-              CMS Specialist
+              CMS Specialist,
+            </h1>
+            <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
+              Front-End & Email Developer
             </h1>
           </div>
 
