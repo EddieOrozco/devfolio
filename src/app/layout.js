@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL("https://www.eddieorozco.com/"),
   title: {
-    default: "Eddie – CMS, Frontend & Email Developer",
-    template: "%s | Eddie – Frontend Developer",
+    default: "Eddie – CMS Specialist, Web Developer",
+    template: "%s | Eddie – CMS Specialist, Web Developer",
   },
   description:
     "I manage enterprise web content and publishing workflows across large-scale CMS platforms, combining content operations expertise with front-end and HTML email development experience.",
@@ -60,8 +60,8 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.eddieorozco.com/",
-    siteName: "Eddie – CMS Specialist, Frontend & Email Developer",
-    title: "Eddie – CMS Specialist, Frontend & Email Developer",
+    siteName: "Eddie – CMS Specialist, Web Developer",
+    title: "Eddie – CMS Specialist, Web Developer",
     description:
       "Showcasing projects, skills, and innovative web development work.",
     images: [
@@ -69,7 +69,7 @@ export const metadata = {
         url: "/og-portfolio.jpg", // put a 1200x630 image in /public
         width: 1200,
         height: 630,
-        alt: "Eddie – CMS Specialist, Frontend & Email Developer",
+        alt: "Eddie – CMS Specialist, Web Developer",
       },
     ],
     locale: "en_US",

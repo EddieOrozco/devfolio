@@ -58,7 +58,7 @@ export default function Hero() {
               CMS Specialist,
             </h1>
             <h1 className="font-serif text-4xl font-bold text-teal-600 lg:text-6xl">
-              Front-End & Email Developer
+              Web Developer
             </h1>
           </div>
 
