@@ -28,12 +28,12 @@ export default function Portfolio() {
     {
       id: 3,
       title: "Campco Outdoors",
-      description: "Promotional HTML Email",
-      image: "/assets/images/campco-icon.png",
+      description: "Newsletter HTML Email",
+      image: "/assets/images/campco-news-img.webp",
       technologies: ["HTML", "MJML", "Design", "Responsive"],
-      liveUrl: "https://campco-outdoors-promo.vercel.app/",
+      liveUrl: "https://campco-newsletter-email.vercel.app/",
       // liveUrl2: "/projects/rnl-studio",
-      category: "Promo HTML Email · AI Visual Creation",
+      category: "Newsletter HTML Email · AI Visual Creation",
     },
     {
       id: 4,
